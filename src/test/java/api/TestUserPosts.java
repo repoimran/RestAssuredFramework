@@ -22,14 +22,14 @@ public class TestUserPosts {
 		RunJsonServer.runServer();
 	}
 
-//	@Test
+	@Test
 	public void testUserPosts_GET() {
 		up.logRequest();
 		up.request_GET(config.getProps(Keys.posts));
 		up.logResponse();
 	}
 
-	// @Test
+	@Test
 	public void testUserPosts_POST() {
 		up.logRequest();
 		up.setContentType(ContentType.JSON);
@@ -44,7 +44,7 @@ public class TestUserPosts {
 		up.logResponse();
 	}
 
-	// @Test
+	@Test
 	public void testUserPosts_PUT() {
 		up.logRequest();
 		up.setContentType(ContentType.JSON);

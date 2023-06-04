@@ -22,14 +22,14 @@ public class TestUserProfile {
 
 	@Test(priority = 1)
 	public void testUserProfile_GET() {
-//		uf.logRequest();
+		uf.logRequest();
 		uf.request_GET(config.getProps(Keys.profile));
 		uf.logResponse();
 	}
 
 	@Test(priority = 3)
 	public void testUserProfile_PUT() {
-//		uf.logRequest();
+		uf.logRequest();
 		uf.setContentType(ContentType.JSON);
 		// here we are using LinkedHashMap to ensure the insertion order to match the db
 		// data format

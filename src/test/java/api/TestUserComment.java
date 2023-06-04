@@ -69,7 +69,7 @@ public class TestUserComment {
 	}
 
 	@AfterTest
-	public void UserPostsTeardown() {
+	public void UserCommentTeardown() {
 		RunJsonServer.quitServer();
 	}
 

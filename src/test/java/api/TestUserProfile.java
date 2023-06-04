@@ -42,7 +42,7 @@ public class TestUserProfile {
 	}
 
 	@AfterTest
-	public void UserPostsTeardown() {
+	public void UserProfileTeardown() {
 		RunJsonServer.quitServer();
 	}
 

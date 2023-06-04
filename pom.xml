@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jsonServerREST</groupId>
+	<artifactId>RestAssuredFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RestAssuredFramework</name>
+	<description>RESTful API TESTING USIND RestAssured Library</description>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.15.2</version>
+		</dependency>
+
+		<!-- 
+		added to project Build path as Library
+		<dependency>
+		<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+		<version>7.7.1</version>
+		</dependency>
+		-->
+
+	</dependencies>
+</project>

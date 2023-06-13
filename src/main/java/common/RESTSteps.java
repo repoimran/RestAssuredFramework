@@ -19,6 +19,7 @@ public abstract class RESTSteps {
 	Response response;
 	Configuration config = new Configuration();
 	String baseUrl;
+	String port = config.getProps(Keys.port);
 
 	public void setUrl() {
 		baseUrl = config.getProps(Keys.baseUrl);
@@ -26,7 +27,7 @@ public abstract class RESTSteps {
 
 	public void init_request() {
 		setUrl();
-		request = RestAssured.given().baseUri(baseUrl);
+		request = RestAssured.given().baseUri(baseUrl + port);
 	}
 
 	public void request_GET(String endpoint) {

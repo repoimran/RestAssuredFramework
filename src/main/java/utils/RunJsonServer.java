@@ -19,7 +19,8 @@ public class RunJsonServer {
 		try {
 			processBuilder = new ProcessBuilder("cmd", "/c", runCommand);
 			processBuilder.inheritIO().start();
-			System.out.println("Json-server started at port :8000");
+			String serverMsg = String.format("Json-server started at port :%s", port);
+			System.out.println(serverMsg);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
